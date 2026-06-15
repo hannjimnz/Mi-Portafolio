@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* ---- CONFIGURACIÓN GENERAL ---- */
+:root {
+    --bg-black: #05070c;        /* Negro profundo de fondo */
+    --card-bg: rgba(13, 20, 35, 0.6); /* Vidrio oscuro para tarjetas */
+    --neon-cyan: #00f2fe;       /* Turquesa neón brillante */
+    --neon-blue: #4facfe;       /* Azul eléctrico */
+    --text-white: #ffffff;
+}
+
+body {
+    background-color: var(--bg-black);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* ---- FUENTE FUTURISTA PARA TÍTULOS ---- */
+.font-future {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* ---- EFECTO DE TEXTO 3D (Como "SOFIA VELAZQUEZ") ---- */
+.text-glow-3d {
+    color: var(--text-white);
+    text-shadow: 
+        0 1px 0 #ccc,
+        0 2px 0 #c5c5c5,
+        0 3px 0 #bbb,
+        0 4px 0 #b0b0b0,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,242,254,0.1),
+        0 0 5px rgba(0,242,254,0.2),
+        0 10px 10px rgba(0,242,254,0.4),
+        0 20px 20px rgba(0,242,254,0.4);
+}
+
+/* ---- BOTONES Y TARJETAS CON BRILLO NEÓN (Glow) ---- */
+.btn-neon-glow {
+    border: 2px solid var(--neon-cyan);
+    box-shadow: 0 0 15px rgba(0, 242, 254, 0.4), inset 0 0 15px rgba(0, 242, 254, 0.2);
+    transition: all 0.3s ease;
+}
+
+.btn-neon-glow:hover {
+    box-shadow: 0 0 25px rgba(0, 242, 254, 0.8), inset 0 0 20px rgba(0, 242, 254, 0.4);
+    background-color: rgba(0, 242, 254, 0.05);
+    transform: scale(1.02);
+}
+
+/* Tarjetas de Proyectos Estilo Vidrio Flotante */
+.card-glass {
+    background: var(--card-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 242, 254, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-glass:hover {
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 20px rgba(0, 242, 254, 0.3);
+    transform: translateY(-5px);
+}
+
+/* Badges de tecnologías con aura */
+.badge-cyan {
+    background: rgba(0, 242, 254, 0.1);
+    border: 1px solid rgba(0, 242, 254, 0.4);
+    box-shadow: 0 0 10px rgba(0, 242, 254, 0.2);
+}
+
+/* ---- LUCES DE FONDO DEGRADADAS (AURAS) ---- */
+.bg-glow-cyan {
+    background: radial-gradient(circle, rgba(0,242,254,0.15) 0%, rgba(5,7,12,0) 70%);
+}
+
+.bg-glow-blue {
+    background: radial-gradient(circle, rgba(80,140,254,0.12) 0%, rgba(5,7,12,0) 70%);
+}
+
+/* ---- ANIMACIÓN DE ONDAS DE LUZ (Como el fondo del mockup) ---- */
+@keyframes waveMotion {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.5; }
+    50% { transform: translateY(-20px) scale(1.05); opacity: 0.8; }
+}
+
+.wave-glow {
+    position: absolute;
+    width: 150%;
+    height: 100%;
+    background: radial-gradient(ellipse at center, rgba(0,242,254,0.08) 0%, rgba(5,7,12,0) 60%);
+    top: 30%;
+    left: -25%;
+    transform: rotate(-10deg);
+    pointer-events: none;
+    animation: waveMotion 10s infinite ease-in-out;
+}
+
+/* ---- SCROLLBAR CUSTOM ---- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-black);
+}
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-cyan);
+}
