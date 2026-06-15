@@ -1,140 +1,202 @@
 <!DOCTYPE html>
-<html lang="es" class="scroll-smooth">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hannia Jimenez | Software Engineer Portfolio</title>
+    <title>Hannia Jimenez | Portfolio</title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body class="bg-[#05070c] text-gray-100 font-sans antialiased">
 
-    <nav class="fixed top-0 left-0 w-full bg-[#05070c]/60 backdrop-blur-xl border-b border-cyan-500/10 z-50 px-6 py-4">
-        <div class="max-w-5xl mx-auto flex justify-between items-center">
-            <div class="font-future text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] to-[#4facfe] text-xl font-black tracking-widest">
-                HJ<span class="text-white">_</span>
-            </div>
-            <ul class="hidden md:flex space-x-8 text-xs font-semibold tracking-widest uppercase text-gray-400">
-                <li><a href="#inicio" class="hover:text-[#00f2fe] transition-colors">Inicio</a></li>
-                <li><a href="#proyectos" class="hover:text-[#00f2fe] transition-colors">Proyectos</a></li>
-                <li><a href="#sobre-mi" class="hover:text-[#00f2fe] transition-colors">Sobre Mí</a></li>
-                <li><a href="#contacto" class="hover:text-[#00f2fe] transition-colors">Contacto</a></li>
-            </ul>
-            <button id="menu-btn" class="md:hidden text-[#00f2fe]">
-                <i data-lucide="menu"></i>
-            </button>
-        </div>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">HJ_</div>
+
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre">Sobre mí</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
     </nav>
 
-    <section id="inicio" class="min-h-screen flex flex-col justify-center items-center text-center px-6 relative overflow-hidden">
-        <div class="absolute w-[500px] h-[500px] bg-glow-cyan top-1/4 -left-1/4 pointer-events-none"></div>
-        <div class="absolute w-[500px] h-[500px] bg-glow-blue bottom-1/4 -right-1/4 pointer-events-none"></div>
-        <div class="wave-glow"></div>
+    <section id="inicio" class="hero">
 
-        <h1 class="font-future text-4xl md:text-7xl font-black uppercase text-glow-3d tracking-wider mb-2">
-            Hannia Jimenez
-        </h1>
-        
-        <p class="text-transparent bg-clip-text bg-gradient-to-r from-[#00f2fe] to-[#4facfe] font-future text-xs md:text-sm tracking-[0.3em] uppercase mb-8 font-bold">
-            Full-Stack Software Engineer
-        </p>
-        
-        <p class="max-w-xl text-gray-400 text-sm md:text-base mb-10 leading-relaxed font-light">
-            Especializada en crear soluciones digitales de alto impacto con tecnologías modernas, automatización y arquitectura limpia. Estudiante de último cuatrimestre.
-        </p>
-        
-        <a href="#proyectos" class="btn-neon-glow font-future text-xs uppercase tracking-widest text-white px-8 py-4 rounded-md font-bold">
-            Explorar Mis Proyectos <span class="text-[#00f2fe]">●</span>
-        </a>
-    </section>
+        <div class="hero-content">
 
-    <section id="proyectos" class="py-28 px-6 max-w-5xl mx-auto relative">
-        <h2 class="font-future text-xl md:text-2xl font-bold mb-12 text-white flex items-center gap-3 tracking-wider">
-            <span class="text-[#00f2fe] text-sm font-mono">//</span> PROYECTOS DESTACADOS
-        </h2>
-        
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="card-glass p-8 rounded-2xl flex flex-col justify-between group">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <i data-lucide="terminal" class="text-[#00f2fe] w-8 h-8 stroke-[1.5]"></i>
-                        <a href="#" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                            <i data-lucide="github" class="w-6 h-6"></i>
-                        </a>
-                    </div>
-                    <h3 class="text-white font-future text-lg font-bold mb-3 tracking-wide group-hover:text-[#00f2fe] transition-colors">
-                        Solar Smart Grid API
-                    </h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed font-light">
-                        Una API RESTful robusta diseñada para monitorear redes de energía solar. Implementa arquitectura limpia, manejo de concurrencia y optimización de consultas a la base de datos.
-                    </p>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <span class="badge-cyan text-[#00f2fe] font-mono text-xs px-3 py-1 rounded-full">Proyectos</span>
-                    <span class="badge-cyan text-[#00f2fe] font-mono text-xs px-3 py-1 rounded-full">Proyecto API</span>
-                </div>
+            <h1>Hannia Jimenez</h1>
+
+            <h2>
+                Software Developer &
+                Software Engineering Student
+            </h2>
+
+            <p>
+                Estudiante de Ingeniería en Software apasionada por el desarrollo
+                Full Stack y Mobile. He desarrollado aplicaciones web y móviles
+                utilizando Python, Java, Flutter y tecnologías modernas enfocadas
+                en resolver problemas reales.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="https://github.com/hannjimnz" target="_blank">
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/hannia-junuen-jimenez-vazquez-9507b640a/"
+                    target = "_blank"
+                    class="linkedin-btn">
+                    LinkedIn
+                </a>
+
             </div>
 
-            <div class="card-glass p-8 rounded-2xl flex flex-col justify-between group">
-                <div>
-                    <div class="flex justify-between items-start mb-6">
-                        <i data-lucide="cpu" class="text-[#00f2fe] w-8 h-8 stroke-[1.5]"></i>
-                        <a href="#" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                            <i data-lucide="github" class="w-6 h-6"></i>
-                        </a>
-                    </div>
-                    <h3 class="text-white font-future text-lg font-bold mb-3 tracking-wide group-hover:text-[#00f2fe] transition-colors">
-                        SaaS Automations Engine
-                    </h3>
-                    <p class="text-gray-400 text-sm mb-6 leading-relaxed font-light">
-                        Microservicio enfocado en la automatización de pipelines y procesamiento de datos en segundo plano. Cuenta con logs estructurados y manejo de colas de mensajería masiva.
-                    </p>
-                </div>
-                <div class="flex flex-wrap gap-2">
-                    <span class="badge-cyan text-[#00f2fe] font-mono text-xs px-3 py-1 rounded-full">Backend</span>
-                    <span class="badge-cyan text-[#00f2fe] font-mono text-xs px-3 py-1 rounded-full">Docker</span>
-                </div>
-            </div>
         </div>
+
     </section>
 
-    <section id="sobre-mi" class="py-24 px-6 max-w-4xl mx-auto">
-        <h2 class="font-future text-xl md:text-2xl font-bold mb-8 text-white flex items-center gap-3 tracking-wider">
-            <span class="text-[#00f2fe] text-sm font-mono">//</span> SOBRE MÍ
-        </h2>
-        <div class="grid md:grid-cols-3 gap-8 text-gray-400 text-sm md:text-base leading-relaxed font-light">
-            <div class="md:col-span-2 space-y-4">
-                <p>¡Hola! Mi nombre es <span class="text-white font-semibold">Hannia Jimenez</span>. Estoy cruzando el último tramo de la Ingeniería en Software, lo que me ha permitido consolidar una mentalidad analítica y estructurada para resolver problemas lógicos.</p>
-                <p>A lo largo de mi carrera técnica, he descubierto que disfruto tanto estructurar bases de datos relacionales eficientes como pulir los detalles visuales y interactivos que hacen que una aplicación sea memorable.</p>
+    <section id="sobre">
+
+        <h2>Sobre mí</h2>
+
+        <p>
+            Actualmente curso el último cuatrimestre de Ingeniería en Software.
+            Me interesa el desarrollo Full Stack, el desarrollo móvil con Flutter
+            y el diseño de soluciones que automaticen procesos empresariales.
+        </p>
+
+        <div class="stats">
+
+            <div class="stat">
+                <h3>7+</h3>
+                <span>Proyectos</span>
             </div>
-            <div class="card-glass p-6 rounded-2xl">
-                <h3 class="text-white font-future text-xs tracking-widest uppercase mb-4 font-bold">Tech Stack</h3>
-                <ul class="font-mono text-xs text-[#00f2fe] space-y-3">
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#4facfe] rounded-full"></span> JavaScript / TypeScript</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#4facfe] rounded-full"></span> Python / Node.js</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#4facfe] rounded-full"></span> SQL & NoSQL Databases</li>
-                    <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-[#4facfe] rounded-full"></span> Git / CI-CD Pipelines</li>
-                </ul>
+
+            <div class="stat">
+                <h3>4+</h3>
+                <span>Tecnologías</span>
             </div>
+
+            <div class="stat">
+                <h3>2026</h3>
+                <span>Graduación</span>
+            </div>
+
         </div>
+
     </section>
 
-    <section id="contacto" class="py-28 px-6 text-center max-w-xl mx-auto">
-        <p class="text-[#00f2fe] font-mono text-xs tracking-widest uppercase mb-3">// ¿Trabajamos juntos?</p>
-        <h3 class="font-future text-2xl md:text-4xl font-black text-white mb-6 tracking-wide">Contacto</h3>
-        <p class="text-gray-400 text-sm mb-10 font-light leading-relaxed">Actualmente estoy abierta a propuestas para proyectos freelance, pasantías o posiciones Junior en Ingeniería de Software. ¡Hablemos de código!</p>
-        <a href="mailto:tu-correo@email.com" class="border border-[#00f2fe] text-[#00f2fe] hover:bg-[#00f2fe]/10 font-future text-xs tracking-widest uppercase px-8 py-4 rounded transition-all duration-300">
-            Enviar Mensaje
+    <section id="skills">
+
+        <h2>Tecnologías</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">Python</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">TypeScript</div>
+            <div class="skill-card">Flutter</div>
+            <div class="skill-card">Dart</div>
+            <div class="skill-card">Node.js</div>
+            <div class="skill-card">SQL</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">Docker</div>
+
+        </div>
+
+    </section>
+
+    <section id="proyectos">
+
+        <h2>Proyectos Destacados</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>MVP Sistema Florería</h3>
+                <p>
+                    Sistema para digitalizar el costeo y administración
+                    de arreglos florales.
+                </p>
+                <span>Python • SQLite</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Flutter Inventory App</h3>
+                <p>
+                    Aplicación móvil para gestión de inventario.
+                </p>
+                <span>Flutter • Dart</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Weather App</h3>
+                <p>
+                    Consulta de clima en tiempo real consumiendo APIs REST.
+                </p>
+                <span>Flutter • API</span>
+            </div>
+
+            <div class="project-card">
+                <h3>To Do List</h3>
+                <p>
+                    CRUD completo con Python y JavaScript.
+                </p>
+                <span>Python • JavaScript</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Flutter Tasks</h3>
+                <p>
+                    Aplicación móvil para administración de tareas.
+                </p>
+                <span>Flutter • SQLite</span>
+            </div>
+
+            <div class="project-card">
+                <h3>Contact Agenda</h3>
+                <p>
+                    Sistema de administración de contactos.
+                </p>
+                <span>Java</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contacto">
+
+        <h2>Contacto</h2>
+
+        <p>
+            Actualmente busco oportunidades como
+            Desarrolladora Junior, prácticas profesionales
+            o proyectos freelance.
+        </p>
+
+        <a href="mailto:jimenez.hannia.cv@gmail.com" class="contact-btn">
+            Enviar correo
         </a>
+
     </section>
 
-    <footer class="py-8 text-center text-[10px] font-mono text-gray-600 border-t border-gray-900/60 tracking-wider uppercase">
-        Diseñado & Programado por Hannia Jimenez © 2026
+    <footer>
+        © 2026 Hannia Jimenez
     </footer>
 
     <script>
-      lucide.createIcons();
+        lucide.createIcons();
     </script>
+
 </body>
+
 </html>
