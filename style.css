@@ -211,3 +211,52 @@ footer{
         flex-direction:column;
     }
 }
+
+.repo-link{
+    color: white;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.repo-link:hover{
+    color: #00f2fe;
+    text-decoration: underline;
+}
+
+.contact-tel{
+    color: #94a3b8;
+    text-decoration: none;
+
+}
+.contact-tel:hover{
+    color:  #00f2fe;
+    text-decoration: none;
+}
+
+.profile-picture{
+    margin-bottom:30px;
+}
+
+.profile-picture img{
+    width:220px;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:4px solid #00f2fe;
+
+    box-shadow:
+        0 0 20px rgba(0,242,254,.4),
+        0 0 50px rgba(0,242,254,.2);
+
+    transition:all .3s ease;
+}
+
+.profile-picture img:hover{
+    transform:scale(1.05);
+}
+.hero-content{
+    margin-left: 80px;
+}
